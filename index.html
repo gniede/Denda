@@ -1,11 +1,62 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Generátor CV - DeLu WORK</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bootstrap Formulář</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-    
+
+<div class="container mt-5">
+    <h2>Registrační Formulář</h2>
+    <form>
+        <!-- Jméno a Příjmení + Pohlaví -->
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label for="inputName">Jméno</label>
+                <input type="text" class="form-control" id="inputName" placeholder="Jméno">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="inputSurname">Příjmení</label>
+                <input type="text" class="form-control" id="inputSurname" placeholder="Příjmení">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="inputGender">Pohlaví</label>
+                <select id="inputGender" class="form-control">
+                    <option selected>Vyberte...</option>
+                    <option>Muž</option>
+                    <option>Žena</option>
+                    <option>Jiné</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Email + Telefon -->
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputEmail">Email</label>
+                <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputPhone">Telefon</label>
+                <input type="tel" class="form-control" id="inputPhone" placeholder="Telefon">
+            </div>
+        </div>
+
+        <!-- Město -->
+        <div class="form-group">
+            <label for="inputCity">Město</label>
+            <input type="text" class="form-control" id="inputCity" placeholder="Město">
+        </div>
+
+        <!-- Tlačítko pro odeslání formuláře -->
+        <button type="submit" class="btn btn-primary">Registrovat</button>
+    </form>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
